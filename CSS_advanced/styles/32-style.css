@@ -114,7 +114,7 @@ a:active { background-color: var(--color-light-grey); }
 .nav { list-style: none; margin: 0; padding: 0; text-align: center; }
 .nav-item { display: var(--nav-item-display); font-family: var(--nav-item-font-family); font-size: var(--nav-item-font-size); font-weight: var(--nav-item-font-weight); letter-spacing: var(--nav-item-letter-spacing); margin: var(--nav-item-margin); }
 .nav .nav-link { display: block; padding: 0.5rem 1rem; position: relative; }
-.nav .nav-link::before { content: ""; position: absolute; top: 0; left: 0; background-color: var(--color-white); width: 0; height: 0.2rem; transition: var(--transition-duration) var(--transition-cubic-bezier); }
+.nav .nav-link::before { content: ""; position: absolute; top: 0; left: 0; background-color: var(--color-white); width: 0; height: 0.2rem; transition: var(--transition-duration) var(--transition-cubic-bezier); } 
 .nav .nav-item:hover .nav-link::before { background-color: var(--color-primary); width: 100%; }
 .nav .nav-link:hover { color: var(--nav-item-link-hover); }
 
@@ -133,17 +133,18 @@ a:active { background-color: var(--color-light-grey); }
 
 .card-work { position: relative; }
 .card-outer { overflow: hidden; position: relative; }
-.card-work .card-image { height: 30rem; width: 100%; object-fit: cover; vertical-align: bottom; transition: var(--transition-duration) var(--transition-cubic-bezier); }
+.card-work .card-image { height: 30rem; width: 100%; object-fit: cover; vertical-align: bottom; }
 .card-work .card-image img { height: 30rem; width: 100%; object-fit: cover; vertical-align: bottom; }
 .card-inner { background-color: rgba(0, 0, 0, 0.7); position: absolute; top: -0.1rem; left: -0.1rem; right: -0.1rem; bottom: -0.1rem; z-index: 1; transition: var(--transition-duration) var(--transition-cubic-bezier); }
 .card-work:hover .card-inner { background-color: rgba(0, 0, 0, 0.7); }
-.card-work:hover .card-image { transform: scale(1.2); }
+.card-work:hover .card-image { transform: scale(1.2); transition: var(--transition-duration) var(--transition-cubic-bezier); }
 .card-work:hover .card-outer { transform: scale(0.95); }
 .card-title { margin: 0; opacity: 0; position: relative; text-align: center; height: 100%; }
 .card-work .card-title a { display: block; padding-top: 45%; text-decoration: none; }
 .card-work .card-title a::after { content: ""; position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
 .card-work:hover .card-title { opacity: 1; }
 
+.card-services .card-title { margin: 0; }
 .card-services h3 { margin: 0; }
 .card-services a { background-color: var(--color-light-grey); display: block; padding: 2rem; }
 .card-services a:hover { background-color: var(--color-primary); color: var(--color-white); text-decoration: none; }

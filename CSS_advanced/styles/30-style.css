@@ -139,6 +139,8 @@ a:active { background-color: var(--color-light-grey); }
 .card-work .card-title a { display: block; padding-top: 45%; text-decoration: none; }
 .card-work .card-title a::after { content: ""; position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
 .card-work:hover .card-title { opacity: 1; }
+.card-work:hover .card-image { transform: scale(1.2); }
+.card-work:hover .card-outer { transform: scale(0.95); }
 
 .card-services h3 { margin: 0; }
 .card-services a { background-color: var(--color-light-grey); display: block; padding: 2rem; }

@@ -339,6 +339,10 @@ a:active {
   color: var(--color-primary);
 }
 
+.card-services .card-title {
+  margin: 0;
+}
+
 .card-services h3 {
   margin: 0;
 }
