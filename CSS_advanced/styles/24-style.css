@@ -241,6 +241,7 @@ ul.row {
 .card-services a:hover {
   background: var(--color-primary);
   color: var(--color-white);
+  text-decoration: none;
 }
 
 .container {
