@@ -157,7 +157,7 @@ h6 {
   color: var(--button-hover-color);
   text-decoration: var(--button-hover-text-decoration);
   background: var(--button-hover-background);
-  transition-property: background-color, color;
+  transition-property: color, background-color;
   transition-duration: var(--transition-duration);
 }
 
@@ -233,9 +233,7 @@ h6 {
   background-color: var(--color-primary);
   height: 0.2rem;
   width: 0;
-  transition: var(--transition-property, width);
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-cubic-bezier);
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .nav .nav-link:hover::before {
@@ -307,12 +305,12 @@ ul.row {
 .card-work .card-image {
   height: auto;
   width: 100%;
-  transition: transform var(--transition-duration) var(--transition-cubic-bezier);
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .card-work .card-inner {
   position: relative;
-  transition: transform var(--transition-duration) var(--transition-cubic-bezier);
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .card-work:hover .card-outer {
